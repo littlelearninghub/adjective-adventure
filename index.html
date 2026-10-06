@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)file:///C:/Users/mazam/Documents/Codex/2026-10-06/referenced-chatgpt-conversation-this-is-an/outputs/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff1ed">
+  <title>Adjective Adventure</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+    :root{--ink:#513f78;--purple:#8b55f5;--pink:#e9409b;--coral:#ff596c;--orange:#ffa31a;--sky:#47b9e8;--paper:#fffaf7}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Fredoka,system-ui,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 12% 10%,#ffc3d7 0,transparent 26%),radial-gradient(ellipse at 90% 65%,#ffe298 0,transparent 28%),linear-gradient(120deg,#fff0f3,#fff8e9);}
+    button{font:inherit;color:inherit;cursor:pointer;border:0}main{width:min(760px,calc(100% - 28px));margin:0 auto;padding:20px 0 52px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{margin:0;color:#8450de;font-size:clamp(25px,5vw,34px);font-weight:700}.score{border-radius:25px;background:#fff;padding:8px 16px;box-shadow:0 3px 12px #7a52831c;font-size:19px;font-weight:600;white-space:nowrap}.intro{font-size:17px;margin:6px 0 18px;color:#77698c}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.tile{min-height:166px;border-radius:28px;color:white;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 8px 0 #60496540,0 12px 20px #63406320;transition:transform .15s,filter .15s}.tile:hover{transform:translateY(-3px);filter:brightness(1.04)}.tile .emoji{font-size:40px;margin-bottom:2px}.tile b{font-size:23px}.tile small{font-size:15px}.tile .star{font-size:22px;margin-top:5px}.purple{background:#8d55f3}.pink{background:#e9409a}.coral{background:#ff5c6c}.orange{background:#ffa21a}.gold{background:#f39c13}.magenta{background:#d831eb}.blue{background:#35addd}.activity{margin-top:13px;border-radius:28px;background:#ffffffd9;padding:20px;box-shadow:0 8px 25px #61477417;min-height:300px}.activity-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.activity h2{margin:0;color:#8450de;font-size:27px}.back,.soft,.primary{border-radius:18px;padding:9px 14px;background:#f0e8ff;font-weight:600}.primary{background:#8b55f5;color:white}.sub{margin:10px 0 18px;color:#786a8a}.playbox{background:#fff7eb;border-radius:22px;padding:20px;text-align:center;min-height:158px;display:grid;place-items:center}.car{font-size:78px;line-height:1.2;transition:all .2s}.prompt{font-size:23px;font-weight:600;margin:0}.choices{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:16px}.choice{padding:10px 16px;border-radius:18px;background:#f0e7ff;font-weight:600}.choice:hover{background:#e6d6ff}.choice.good{background:#c9f0d7}.choice.bad{background:#ffd3d5}.feedback{min-height:27px;text-align:center;font-weight:600;margin:12px 0 0;color:#74599c}.poster{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.poster button{min-height:82px;border-radius:20px;background:linear-gradient(135deg,#fff,#f4e8ff);box-shadow:0 4px 0 #dfcce9;font-weight:600;font-size:19px}.poster button:nth-child(3n+2){background:linear-gradient(135deg,#fff,#ffe9e4)}.sentence{font-size:22px;line-height:1.7}.sentence .word{cursor:pointer;border-radius:8px;padding:2px 5px}.sentence .word:hover{background:#fff0aa}.sentence .hit{background:#c9f0d7}.sort-zone{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.zone{border:2px dashed #d3bfe9;border-radius:18px;padding:12px;min-height:72px}.zone b{display:block;color:#8b55f5;margin-bottom:4px}.pair-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.pair-grid button{min-height:53px;border-radius:15px;background:#f2eaff;font-weight:600}.pair-grid button.selected{outline:3px solid #8d55f3}.pair-grid button.matched{background:#c9f0d7}.word-build{font-size:30px;font-weight:700}.buildline{min-height:42px;padding:5px;border-bottom:3px dashed #c9b2e1;margin:8px 0}.mascot{position:fixed;bottom:12px;left:15px;display:flex;align-items:center;gap:9px}.mascot .face{width:52px;height:52px;border-radius:50%;background:#ffd54c;display:grid;place-items:center;font-size:29px;box-shadow:0 4px 0 #d59834}.bubble{background:#fff;border:2px solid #ebdcf4;border-radius:17px;padding:8px 12px;font-size:14px}.hidden{display:none!important}.modal{position:fixed;inset:0;background:#34274466;display:grid;place-items:center;padding:18px}.modal-card{background:white;border-radius:25px;padding:22px;max-width:420px;width:100%;box-shadow:0 12px 40px #38234a55}.modal-card h3{margin:0 0 8px;color:#8450de}.modal-card p{line-height:1.5}.toast{margin-top:12px;background:#fff;border-radius:16px;padding:11px;text-align:center;color:#684b8e;font-weight:600;min-height:43px}
+    @media(max-width:520px){main{width:min(100% - 20px,760px);padding-top:14px}.grid{gap:12px}.tile{min-height:142px;border-radius:23px}.tile .emoji{font-size:34px}.tile b{font-size:20px}.activity{padding:15px}.poster{grid-template-columns:repeat(2,1fr)}.mascot{bottom:8px;left:8px}.mascot .face{width:43px;height:43px;font-size:24px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="top"><h1 class="brand">Adjective Adventure</h1><div class="score">⭐ <span id="score">0</span></div></header>
+    <p class="intro">Adjectives tell us more about people, places and things.</p>
+    <section id="menu" class="grid" aria-label="Activities"><button class="tile purple" onclick="openActivity('learn')"><span class="emoji">🪄</span><b>Learn</b><small>Magic Box</small><span class="star" id="star-learn">☆</span></button><button class="tile pink" onclick="openActivity('poster')"><span class="emoji">📋</span><b>Poster</b><small>Living Poster</small><span class="star" id="star-poster">☆</span></button><button class="tile coral" onclick="openActivity('sort')"><span class="emoji">🧩</span><b>Sort</b><small>Which Group?</small><span class="star" id="star-sort">☆</span></button><button class="tile orange" onclick="openActivity('match')"><span class="emoji">🔗</span><b>Match</b><small>Match Up</small><span class="star" id="star-match">☆</span></button><button class="tile gold" onclick="openActivity('flip')"><span class="emoji">🔄</span><b>Flip</b><small>Opposites</small><span class="star" id="star-flip">☆</span></button><button class="tile magenta" onclick="openActivity('circle')"><span class="emoji">🔍</span><b>Circle</b><small>Spot It!</small><span class="star" id="star-circle">☆</span></button><button class="tile blue" onclick="openActivity('build')"><span class="emoji">🧱</span><b>Build</b><small>Build It</small><span class="star" id="star-build">☆</span></button></section>
+    <section id="activity" class="activity hidden" aria-live="polite"></section>
+  </main>
+  <aside class="mascot"><div class="face">🐝</div><div class="bubble" id="mascotText">Pick a world!</div></aside>
+  <div id="modal" class="modal hidden"><div class="modal-card"><h3 id="modalTitle"></h3><p id="modalBody"></p><button class="primary" onclick="closeModal()">Got it!</button></div></div>
+  <script>
+    const activities=[
+      {id:'learn',icon:'🪄',name:'Learn',sub:'Magic Box',color:'purple'},
+      {id:'poster',icon:'📋',name:'Poster',sub:'Living Poster',color:'pink'},
+      {id:'sort',icon:'🧩',name:'Sort',sub:'Which Group?',color:'coral'},
+      {id:'match',icon:'🔗',name:'Match',sub:'Match Up',color:'orange'},
+      {id:'flip',icon:'🔄',name:'Flip',sub:'Opposites',color:'gold'},
+      {id:'circle',icon:'🔍',name:'Circle',sub:'Spot It!',color:'magenta'},
+      {id:'build',icon:'🧱',name:'Build',sub:'Build It',color:'blue'}
+    ];
+    let score=0, stars=new Set(), mode='', round=0, picked=[];
+    const menu=document.querySelector('#menu'), panel=document.querySelector('#activity');
+    menu.innerHTML=activities.map(a=>`<button class="tile ${a.color}" onclick="openActivity('${a.id}')"><span class="emoji">${a.icon}</span><b>${a.name}</b><small>${a.sub}</small><span class="star" id="star-${a.id}">${stars.has(a.id)?'⭐':'☆'}</span></button>`).join('');
+    function setScore(n=1){score+=n;document.querySelector('#score').textContent=score;}
+    function say(msg){document.querySelector('#mascotText').textContent=msg;}
+    function openActivity(id){mode=id;round=0;picked=[];menu.classList.add('hidden');panel.classList.remove('hidden');render();}
+    function back(){panel.classList.add('hidden');menu.classList.remove('hidden');}
+    function header(title,subtitle){return `<div class="activity-head"><button class="back" onclick="back()">← Back</button><h2>${title}</h2><span></span></div><p class="sub">${subtitle}</p>`}
+    function markStar(){stars.add(mode);const el=document.querySelector(`#star-${mode}`);if(el)el.textContent='⭐';}
+    function good(msg='Great job!'){setScore();markStar();document.querySelector('#feedback').textContent='⭐ '+msg;say('You found an adjective!');}
+    function feedback(){return '<div class="feedback" id="feedback"></div>';}
+    function render(){
+      if(mode==='learn') panel.innerHTML=header('Magic Box','Tap a spell to change the car!')+`<div class="playbox"><div><div class="car" id="car">🚗</div><p id="carText">a car</p></div></div><div class="choices">${['big','small','red','yellow','blue','purple','fast','slow'].map(x=>`<button class="choice" onclick="spell('${x}')">${x}</button>`).join('')}</div>${feedback()}`;
+      if(mode==='poster') panel.innerHTML=header('Living Poster','Tap any word on the poster to see it come alive!')+`<div class="poster">${['tall','tiny','happy','sad','soft','rough','bright','dark','fast','slow','kind','brave','hot','cold','shiny','quiet','loud','gentle'].map(w=>`<button onclick="posterWord('${w}',this)">${w}</button>`).join('')}</div>${feedback()}`;
+      if(mode==='sort') sortRound();
+      if(mode==='match') matchRound();
+      if(mode==='flip') flipRound();
+      if(mode==='circle') circleRound();
+      if(mode==='build') buildRound();
+    }
+    function spell(w){const car=document.querySelector('#car');car.style.transform=w==='big'?'scale(1.3)':w==='small'?'scale(.75)':w==='fast'?'translateX(45px)':w==='slow'?'translateX(-15px)':'';car.style.color=['red','yellow','blue','purple'].includes(w)?w:'';document.querySelector('#carText').textContent=`a ${w} car`;good(`Yes! “${w}” describes the car.`);}
+    function posterWord(w,el){document.querySelectorAll('.poster button').forEach(b=>b.style.transform='');el.style.transform='scale(1.08) rotate(-2deg)';good(`“${w}” is an adjective.`);}
+    const sortItems=[
+      {emoji:'🍎🍎',word:'two',answer:'amount',choices:['🔢 amount','🌈 color','👅 taste']},
+      {emoji:'😠',word:'mean',answer:'behavior',choices:['✋ feeling','🐶 behavior','🔺 shape']},
+      {emoji:'🔺',word:'triangle',answer:'shape',choices:['👂 sound','🔺 shape','✋ feeling']},
+      {emoji:'🥞',word:'flat',answer:'shape',choices:['📏 size','🔺 shape','👁️ appearance']},
+      {emoji:'⚽',word:'round',answer:'shape',choices:['👃 smell','🌈 color','🔺 shape']},
+      {emoji:'🍎',word:'red',answer:'color',choices:['👃 smell','🌈 color','👅 taste']},
+      {emoji:'🌶️',word:'spicy',answer:'taste',choices:['🌈 color','📏 size','👅 taste']},
+      {emoji:'🔔',word:'loud',answer:'sound',choices:['👂 sound','📏 size','👁️ appearance']}
+    ];
+    function sortRound(){const item=sortItems[round%sortItems.length];panel.innerHTML=header('Which Group?','Tap the group that the adjective belongs to.')+`<p class="sub">Question ${round%8+1} / 8 · Which group?</p><div class="playbox"><div><div class="car">${item.emoji}</div><p class="prompt">${item.word}</p></div></div><div class="choices">${item.choices.map(c=>{const [icon,...label]=c.split(' ');return `<button class="choice" onclick="sortAnswer('${label.join(' ')}')">${icon} ${label.join(' ')}</button>`}).join('')}</div>${feedback()}`;}
+    function sortAnswer(a){const item=sortItems[round%sortItems.length];if(a===item.answer){good('Awesome!');round++;setTimeout(sortRound,650)}else{document.querySelector('#feedback').textContent='Try again!';}}
+    const pairs=[['cold','🍦 ice-cream'],['hot','🏜️ desert'],['fast','🏎️ car'],['soft','🛏️ pillow'],['blue','☁️ sky']];
+    function matchRound(){picked=[];const words=pairs.flat().sort(()=>Math.random()-.5);panel.innerHTML=header('Match Up','Tap an adjective, then its noun. A line will connect them!')+`<div class="pair-grid">${words.map(w=>`<button onclick="pickMatch(this,'${w}')">${w}</button>`).join('')}</div>${feedback()}`;}
+    function pickMatch(el,w){if(el.classList.contains('matched'))return;el.classList.add('selected');picked.push({el,w});if(picked.length===2){const [a,b]=picked;if(pairs.some(p=>p.includes(a.w)&&p.includes(b.w)&&p[0]!==p[1])){a.el.className='matched';b.el.className='matched';good(`${a.w} and ${b.w} go together!`);if(document.querySelectorAll('.matched').length===10)setTimeout(matchRound,900);}else{document.querySelector('#feedback').textContent='Try another pair!';setTimeout(()=>picked.forEach(x=>x.el.classList.remove('selected')),500)}picked=[];}}
+    const opposites=[['tall','short'],['big','small'],['fast','slow'],['nice','mean'],['hot','cold'],['fresh','spoiled']];
+    function flipRound(){panel.innerHTML=header('Opposites','Tap a card to find its opposite.')+`<div class="poster">${opposites.map((p,i)=>`<button id="flip-${i}" onclick="flipCard(${i})">${p[0]}<br><small>tap to flip</small></button>`).join('')}</div>${feedback()}`;}
+    function flipCard(i){const p=opposites[i],el=document.querySelector(`#flip-${i}`);if(el.dataset.flipped){el.innerHTML=p[0]+'<br><small>tap to flip</small>';delete el.dataset.flipped;}else{el.innerHTML=p[1]+'<br><small>opposite</small>';el.dataset.flipped='1';good(`The opposite of ${p[0]} is ${p[1]}.`);}}
+    function nextFlip(){round++;flipRound();}
+    const sentences=[
+      {text:'The big dog is nice.',adjs:['big','nice']},
+      {text:'The lemon is sour.',adjs:['sour']},
+      {text:'The ice-cream is cold.',adjs:['cold']},
+      {text:'The dirty shoe is stinky.',adjs:['dirty','stinky']},
+      {text:'The scary monster is tall.',adjs:['scary','tall']},
+      {text:'The sun is bright and yellow.',adjs:['bright','yellow']}
+    ];
+    let circleCount=0;
+    function circleRound(){circleCount=0;panel.innerHTML=header('Spot It!','Tap ALL the adjectives in each sentence.')+sentences.map((s,i)=>`<div class="playbox" style="margin:9px 0"><p class="sentence">${s.text.split(' ').map(w=>{const clean=w.toLowerCase().replace(/[^a-z]/g,'');return `<span class="word" onclick="circleWord(this,'${clean}',${i})">${w}</span>`}).join(' ')}</p></div>`).join('')+`<p id="circleProgress" class="feedback">0 / 10</p>`;}
+    function circleWord(el,w,i){const target=sentences[i].adjs.includes(w);if(target&&!el.classList.contains('hit')){el.classList.add('hit');circleCount++;document.querySelector('#circleProgress').textContent=`${circleCount} / 10`;if(circleCount===10){setScore();markStar();document.querySelector('#circleProgress').textContent='⭐ Awesome! You found them all!';}}else if(!target){document.querySelector('#circleProgress').textContent='Look for a describing word!';}}
+    const buildPrompts=[['a','fluffy','cat'],['the','bright','sun'],['a','tiny','mouse'],['the','happy','pup']];
+    function buildRound(){const p=buildPrompts[round%buildPrompts.length];panel.innerHTML=header('Build It','Choose a describing word to make the phrase more interesting.')+`<div class="playbox"><div><div class="word-build">${p[0]} <span id="builtWord">____</span> ${p[2]}</div><p class="sub">${p[0]} ____ ${p[2]}</p></div></div><div class="choices">${[p[1],'huge','soft','blue'].sort(()=>Math.random()-.5).map(w=>`<button class="choice" onclick="buildWord('${w}')">${w}</button>`).join('')}</div>${feedback()}`;}
+    function buildWord(w){document.querySelector('#builtWord').textContent=w;good(`“${w}” makes the phrase more interesting!`);round++;setTimeout(buildRound,900);}
+    function closeModal(){document.querySelector('#modal').classList.add('hidden');}
+  </script>
+
+
+</body></html>
