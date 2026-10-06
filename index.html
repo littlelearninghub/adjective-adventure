@@ -46,7 +46,7 @@
     function markStar(){stars.add(mode);const el=document.querySelector(`#star-${mode}`);if(el)el.textContent='⭐';}
     function good(msg='Great job!'){setScore();markStar();const f=document.querySelector('#feedback');if(f)f.textContent='⭐ '+msg;say('You found an adjective!');}
     function feedback(){return '<div class="feedback" id="feedback"></div>';}
-    function render(){
+    function speakWord(w){if('speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(w);u.lang='en-US';speechSynthesis.speak(u)}}document.addEventListener('click',e=>{let t=e.target.closest('button,.word');if(!t)return;let w='';if(mode==='sort'&&t.classList.contains('choice'))w=sortItems[round%sortItems.length].word;else if(mode==='build'&&t.id==='addAdjective'){let p=buildPrompts[round%buildPrompts.length];w=p[2][buildAdded]}else if(mode==='circle'&&t.classList.contains('word'))w=t.textContent.replace(/[^a-z-]/gi,'');else if((mode==='learn'&&t.classList.contains('choice'))||(mode==='poster'&&t.closest('.cat-words'))||(mode==='match'&&t.closest('.pair-grid'))||(mode==='flip'&&t.id.startsWith('flip-')))w=t.textContent.replace(/[^a-z-]/gi,' ').trim().split(' ')[0];if(w)speakWord(w)},true);function render(){
       if(mode==='learn') panel.innerHTML=header('Magic Box','Tap a spell to change the car!')+`<div class="playbox"><div><div class="car" id="car">🚗</div><p id="carText">a car</p></div></div><div class="choices">${['big','small','red','yellow','blue','purple','fast','slow'].map(x=>`<button class="choice" onclick="spell('${x}')">${x}</button>`).join('')}</div>${feedback()}`;
       if(mode==='poster') posterRound();
       if(mode==='sort') sortRound();
