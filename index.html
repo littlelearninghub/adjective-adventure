@@ -62,7 +62,7 @@
     ];
     const posterEmojis={tall:'🦒',small:'🐜',short:'🐕',big:'🐘',red:'🍎',yellow:'🍌',purple:'🍇',blue:'🐳',triangle:'🔺',flat:'🥞',round:'⚽',square:'🟧',one:'🍎',twenty:'⭐'.repeat(20),ten:'🍎'.repeat(10),two:'🍎🍎',spicy:'🌶️',sweet:'🍭',salty:'🧂',sour:'🍋',musty:'🧦',spoiled:'🥛',fresh:'🌸',stinky:'🦨',nice:'😊',mean:'😠',fast:'🐆',slow:'🐌'};
     function posterRound(){panel.innerHTML=header('Living Poster','Tap any word on the poster to see it come alive!')+`<div class="poster-live" id="posterLive"><div><div class="live-emoji">👆</div><div class="live-word">?</div></div></div><div class="infographic"><h3>Adjectives</h3><p class="lead">Adjectives tell us about nouns.</p><p class="lead">Adjectives can tell us about the ...</p><div class="cat-grid">${posterGroups.map(([cat,words])=>`<div class="cat"><h4>${cat}</h4><div class="cat-words">${words.map(w=>`<button onclick="posterWord('${w}')">${w}</button>`).join('')}</div></div>`).join('')}</div></div>${feedback()}`;}
-    function posterWord(w){const live=document.querySelector('#posterLive');live.querySelector('.live-emoji').textContent=posterEmojis[w]||'✨';live.querySelector('.live-word').textContent=w;good(`${w}!`);}
+    function posterWord(w){const live=document.querySelector('#posterLive');live.querySelector('.live-emoji').textContent=posterEmojis[w]||'✨';live.querySelector('.live-word').textContent=w;good(`${w}!`);if('speechSynthesis'in window){window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(w);utterance.lang='en-US';window.speechSynthesis.speak(utterance);}}
     const sortItems=[
       {emoji:'🍎🍎',word:'two',answer:'amount',choices:['🔢 amount','🌈 color','👅 taste']},
       {emoji:'😠',word:'mean',answer:'behavior',choices:['✋ feeling','🐶 behavior','🔺 shape']},
